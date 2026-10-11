@@ -1,0 +1,20 @@
+{
+  "name": "Sky Chat - Fast Messaging & Video Calls",
+  "short_name": "Sky Chat",
+  "description": "High-quality realtime messaging, crystal-clear audio, video calling, and media sharing.",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0284c7",
+  "orientation": "portrait",
+  "categories": ["social", "communication"],
+  "icons": [
+    {
+      "src": "/sky-icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

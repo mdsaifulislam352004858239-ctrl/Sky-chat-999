@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0c4a6e" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  
+  <!-- App Icon Background (Squircle for Play Store / Android) -->
+  <rect width="512" height="512" rx="128" fill="url(#skyGrad)"/>
+  
+  <!-- Cloud Graphic with Chat Bubbles -->
+  <g filter="url(#shadow)">
+    <!-- Main Cloud Base -->
+    <path d="M380 340 H160 C115 340 80 305 80 260 C80 218 110 183 151 180 C165 125 214 85 272 85 C336 85 389 133 398 195 C424 204 442 229 442 258 C442 293 414 322 380 340 Z" fill="url(#cloudGrad)"/>
+    
+    <!-- Chat Tail -->
+    <path d="M190 330 L140 385 C135 390 125 388 127 380 L134 330 Z" fill="url(#cloudGrad)"/>
+    
+    <!-- Modern Chat Dots inside cloud -->
+    <circle cx="210" cy="235" r="16" fill="#0284c7" opacity="0.9"/>
+    <circle cx="266" cy="235" r="16" fill="#0284c7" opacity="0.9"/>
+    <circle cx="322" cy="235" r="16" fill="#0284c7" opacity="0.9"/>
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Play Store / Android Native Mobile Enhancements */
+html, body, #root {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+  overscroll-behavior-x: none !important;
+  overscroll-behavior-y: contain;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+input, textarea {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+/* Custom Scrollbar for smooth desktop/mobile viewing */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.4);
+}
+
+/* Facebook Story Floating Reaction Animation */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(0.9);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-70px) scale(1.4) rotate(-5deg);
+    opacity: 0.95;
+  }
+  80% {
+    transform: translateY(-130px) scale(1.6) rotate(5deg);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-180px) scale(1.8);
+    opacity: 0;
+  }
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Sky Chat",
+  "description": "Realtime messaging and audio/video calling application",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
